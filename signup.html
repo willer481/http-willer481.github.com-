@@ -21,9 +21,9 @@
       <h2>Join StudyZone</h2>
       <p>Sign up to start tracking your learning journey.</p>
       <form id="signupForm">
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
         <button type="submit">Sign Up</button>
       </form>
       <p class="signup-link">Already have an account? <a href="login.html">Log in</a></p>
@@ -33,5 +33,20 @@
   <footer>
     <p>&copy; 2025 StudyZone. Built by Willem 🚀</p>
   </footer>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Stop the form from reloading the page
+
+      const name = event.target.name.value;
+      const email = event.target.email.value;
+      const password = event.target.password.value;
+
+      console.log("Sign-up info:", { name, email, password });
+
+      // Future: send this info to Firebase
+      alert("Thanks for signing up, " + name + "! (This will connect to Firebase soon.)");
+    });
+  </script>
 </body>
 </html>
