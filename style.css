@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header styles */
+/* Header */
 header {
   background-color: #dbeafe;
   color: #1e3a8a;
@@ -43,6 +43,7 @@ main {
   text-align: center;
 }
 
+/* Homepage intro section */
 .intro h2 {
   font-size: 1.8rem;
   color: #2563eb;
@@ -72,9 +73,6 @@ main {
   background-color: #60a5fa;
 }
 
-/* Footer */
-footer {
-  background-color: #e0e7ff;
 /* Login container */
 .login-container {
   background-color: #ffffff;
@@ -121,18 +119,24 @@ form button:hover {
   background-color: #60a5fa;
 }
 
+/* Signup link */
 .signup-link {
   margin-top: 15px;
   font-size: 0.9rem;
 }
+
 .signup-link a {
   color: #2563eb;
   text-decoration: none;
 }
+
 .signup-link a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
+footer {
+  background-color: #e0e7ff;
   color: #1e3a8a;
   text-align: center;
   padding: 15px;
