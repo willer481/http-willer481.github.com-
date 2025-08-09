@@ -1,36 +1,82 @@
+/* Reset and base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f0f4f8;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Header styles */
 header {
-  background-color: #007acc;
-  color: white;
+  background-color: #dbeafe;
+  color: #1e3a8a;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   margin: 0 15px;
-  color: white;
+  color: #1e3a8a;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content */
 main {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
 }
 
+.intro h2 {
+  font-size: 1.8rem;
+  color: #2563eb;
+}
+
+.intro p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Call-to-action button */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #93c5fd;
+  color: #1e3a8a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #60a5fa;
+}
+
+/* Footer */
 footer {
-  background-color: #222;
-  color: white;
+  background-color: #e0e7ff;
+  color: #1e3a8a;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  font-size: 0.9rem;
 }
